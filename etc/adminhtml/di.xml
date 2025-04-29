@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Block\Adminhtml\Order\View\Items">
+        <plugin name="imageitem_order_prepare_data_source_after" type="PinBlooms\OrderItemsImage\Plugin\Adminhtml\AddImage"/>
+    </type>
+    <type name="Magento\Sales\Block\Adminhtml\Order\View\Items\Renderer\DefaultRenderer">
+        <plugin name="imagerenderer_order_prepare_data_source_after" type="PinBlooms\OrderItemsImage\Plugin\Adminhtml\AddRenderer"/>
+    </type>
+</config>
